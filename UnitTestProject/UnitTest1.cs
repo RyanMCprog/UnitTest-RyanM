@@ -57,6 +57,7 @@ namespace UnitTestProject
         [TestMethod]
         public void Vector3Addition()
         {
+            
             Vector3 v3a = new Vector3(13.5f, -48.23f, 862);
             Vector3 v3b = new Vector3(5, 3.99f, -12);
             Vector3 v3c = v3a + v3b;
@@ -466,90 +467,90 @@ namespace UnitTestProject
             Assert.IsTrue(compare(v4c, new Vector4(31.0490131378f, 39.2981109619f, -54, 0)));
         }
 
-        [TestMethod]
-        public void ColourConstructor()
-        {
-            // homogeneous point translation
-            Colour c = new Colour(0x12, 0x34, 0x56, 0x78);
+        //[TestMethod]
+        //public void ColourConstructor()
+        //{
+        //    // homogeneous point translation
+        //    Colour c = new Colour(0x12, 0x34, 0x56, 0x78);
 
-            Assert.AreEqual<UInt32>(c.colour, 0x12345678);
-        }
+        //    Assert.AreEqual<UInt32>(c.colour, 0x12345678);
+        //}
 
-        [TestMethod]
-        public void ColourGetRed()
-        {
-            // homogeneous point translation
-            Colour c = new Colour(0x12, 0x34, 0x56, 0x78);
+        //[TestMethod]
+        //public void ColourGetRed()
+        //{
+        //    // homogeneous point translation
+        //    Colour c = new Colour(0x12, 0x34, 0x56, 0x78);
 
-            Assert.AreEqual<byte>(c.GetRed(), 0x12);
-        }
+        //    Assert.AreEqual<byte>(c.GetRed(), 0x12);
+        //}
 
-        [TestMethod]
-        public void ColourGetGreen()
-        {
-            // homogeneous point translation
-            Colour c = new Colour(0x12, 0x34, 0x56, 0x78);
+        //[TestMethod]
+        //public void ColourGetGreen()
+        //{
+        //    // homogeneous point translation
+        //    Colour c = new Colour(0x12, 0x34, 0x56, 0x78);
 
-            Assert.AreEqual<byte>(c.GetGreen(), 0x34);
-        }
+        //    Assert.AreEqual<byte>(c.GetGreen(), 0x34);
+        //}
 
 
-        [TestMethod]
-        public void ColourGetBlue()
-        {
-            // homogeneous point translation
-            Colour c = new Colour(0x12, 0x34, 0x56, 0x78);
+        //[TestMethod]
+        //public void ColourGetBlue()
+        //{
+        //    // homogeneous point translation
+        //    Colour c = new Colour(0x12, 0x34, 0x56, 0x78);
 
-            Assert.AreEqual<byte>(c.GetBlue(), 0x56);
-        }
+        //    Assert.AreEqual<byte>(c.GetBlue(), 0x56);
+        //}
 
-        [TestMethod]
-        public void ColourGetAlpha()
-        {
-            // homogeneous point translation
-            Colour c = new Colour(0x12, 0x34, 0x56, 0x78);
+        //[TestMethod]
+        //public void ColourGetAlpha()
+        //{
+        //    // homogeneous point translation
+        //    Colour c = new Colour(0x12, 0x34, 0x56, 0x78);
 
-            Assert.AreEqual<byte>(c.GetAlpha(), 0x78);
-        }
+        //    Assert.AreEqual<byte>(c.GetAlpha(), 0x78);
+        //}
         
-        [TestMethod]
-        public void ColourSetRed()
-        {
-            // homogeneous point translation
-            Colour c = new Colour();
-            c.SetRed(0x12);
+        //[TestMethod]
+        //public void ColourSetRed()
+        //{
+        //    // homogeneous point translation
+        //    Colour c = new Colour();
+        //    c.SetRed(0x12);
 
-            Assert.AreEqual<UInt32>(c.colour, 0x12000000);
-        }
+        //    Assert.AreEqual<UInt32>(c.colour, 0x12000000);
+        //}
 
-        [TestMethod]
-        public void ColourSetGreen()
-        {
-            // homogeneous point translation
-            Colour c = new Colour();
-            c.SetGreen(0x34);
+        //[TestMethod]
+        //public void ColourSetGreen()
+        //{
+        //    // homogeneous point translation
+        //    Colour c = new Colour();
+        //    c.SetGreen(0x34);
 
-            Assert.AreEqual<UInt32>(c.colour, 0x00340000);
-        }
+        //    Assert.AreEqual<UInt32>(c.colour, 0x00340000);
+        //}
 
-        [TestMethod]
-        public void ColourSetBlue()
-        {
-            // homogeneous point translation
-            Colour c = new Colour();
-            c.SetBlue(0x56);
+        //[TestMethod]
+        //public void ColourSetBlue()
+        //{
+        //    // homogeneous point translation
+        //    Colour c = new Colour();
+        //    c.SetBlue(0x56);
 
-            Assert.AreEqual<UInt32>(c.colour, 0x00005600);
-        }
+        //    Assert.AreEqual<UInt32>(c.colour, 0x00005600);
+        //}
 
-        [TestMethod]
-        public void ColourSetAlpha()
-        {
-            // homogeneous point translation
-            Colour c = new Colour();
-            c.SetAlpha(0x78);
+        //[TestMethod]
+        //public void ColourSetAlpha()
+        //{
+        //    // homogeneous point translation
+        //    Colour c = new Colour();
+        //    c.SetAlpha(0x78);
 
-            Assert.AreEqual<UInt32>(c.colour, 0x00000078);
-        }
+        //    Assert.AreEqual<UInt32>(c.colour, 0x00000078);
+        //}
     }
 }
